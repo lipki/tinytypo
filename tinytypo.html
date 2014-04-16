@@ -587,6 +587,54 @@ body { text-align: center; }
 		</tbody>
 	</table>
 	</div>
+
+	<p>
+		Dans le cas d'un tableau trop large pour être contenu dans un écran d'appareil mobile par exemple.
+		Le sélecteur CSS .flip-table-responsive, permet d'échanger les lignes et les colonnes et de maintenir les entêtes visibles à gauche
+		Ce sélecteur ne fonctionne pas avec les cellules fusionnées.
+	</p>
+
+	<div class="flip-table-responsive">
+	<table class="table">
+		<caption>Titre du tableau</caption>
+		<thead>
+			<tr>
+				<th scope="col">entête</th>
+				<th scope="col">R</th>
+				<th scope="col">V</th>
+				<th scope="col">B</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td>footer</td>
+				<td>footer</td>
+				<td>footer</td>
+				<td>footer</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr class="odd">
+				<td>Red</td>
+				<td>255</td>
+				<td>0</td>
+				<td>0</td>
+			</tr><!--
+		 --><tr class="even">
+				<td>Green</td>
+				<td>0</td>
+				<td>255</td>
+				<td>0</td>
+			</tr><!--
+		 --><tr class="odd">
+				<td>Blue</td>
+				<td>0</td>
+				<td>0</td>
+				<td>255</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
 </section>
 
 
@@ -688,7 +736,7 @@ p q r s t u v w x y z { | } ~</pre>
 
 	<div class="text-justify">
 		<p>Texte justifié avec <code>.text-justify</code>. Il est possible de justifier le texte, c'est-à-dire que toutes les lignes d'un paragraphe aient la même longueur. Est-ce intéressant de le faire&nbsp;? D'un point de vue de lisibilité, des études montrent qu'un texte en drapeau est plus accessible à l'œil&nbsp;: l'irrégularité des fins de lignes sert de repère visuel et fatigue moins le lecteur. Pourtant, un alignement justifié donne un résultat esthétique plus agréable et une impression de plus grande régularité.
-	    <br>Lire le conseil sur ergologique.com&nbsp;: <a href="http://www.ergologique.com/conseils/conseils.php?id_tip=818" rel="external" class="external">Le texte se justifie-t-il&nbsp;?</a></p>
+		<br>Lire le conseil sur ergologique.com&nbsp;: <a href="http://www.ergologique.com/conseils/conseils.php?id_tip=818" rel="external" class="external">Le texte se justifie-t-il&nbsp;?</a></p>
 	</div>
 	<div class="text-left">
 		<p>Texte ferré à gauche avec <code>.text-left</code>. Il ne faut pas confondre le terme de justification avec l'expression « justifié » à gauche ou à droite souvent employée à tort à la place de « ferré » à gauche ou à droite. Les textes sont par défaut ferrés à gauche et sont par nature, selon la taille de l'écran, sa définition et la taille de la fenêtre dans laquelle le texte apparaît, d'une justification plus ou moins longue.</p>

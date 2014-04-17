@@ -177,6 +177,23 @@ table { max-width: 100%; border-collapse: collapse; border-spacing: 0; }
 	.table-responsive td { white-space: nowrap; }
 }
 
+@media (max-width: @screen-medium) {
+  .flip-table-responsive table { border-collapse: collapse; border-spacing: 0; display: block; position: relative; width: 100%; }
+  .flip-table-responsive caption { width: 100%; }
+  .flip-table-responsive thead { display: block; float: left; }
+  .flip-table-responsive tfoot { display: block; float: right; }
+  .flip-table-responsive thead tr,
+  .flip-table-responsive tfoot tr { display: block; border-right: 1px solid; border-left: 1px solid; }
+  .flip-table-responsive tbody { display: block; width: auto; position: relative; overflow-x: auto; white-space: nowrap; }
+  .flip-table-responsive tbody tr { display: inline-block; vertical-align: top; }
+  .flip-table-responsive tbody tr:last-child { border-right: 0; }
+  .flip-table-responsive th,
+  .flip-table-responsive td { margin: 0; vertical-align: top; border-bottom: 0; }
+  .flip-table-responsive tr { border-right: 1px solid; }
+  .flip-table-responsive th { text-align: left; display: block; }
+  .flip-table-responsive td { display: block; text-align: left; }
+}
+
 /* Quotes, code and poetry */
 q { quotes: "\201C" "\201D" "\2018" "\2019"; } // “ ” ‘ ’
 :lang(en)>q { quotes: "\201C" "\201D" "\2018" "\2019" } // “ ” ‘ ’

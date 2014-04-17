@@ -488,7 +488,6 @@ table {
     white-space: nowrap;
   }
 }
-
 @media (max-width: 640px) {
   .flip-table-responsive table {
     border-collapse: collapse;
@@ -515,7 +514,8 @@ table {
     border-left: 1px solid;
   }
   .flip-table-responsive tbody {
-    display: block; width: auto;
+    display: block;
+    width: auto;
     position: relative;
     overflow-x: auto;
     white-space: nowrap;
@@ -542,13 +542,9 @@ table {
   }
   .flip-table-responsive td {
     display: block;
-    min-height: 1.25em;
     text-align: left;
   }
 }
-
-
-
 /* Quotes, code and poetry */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
